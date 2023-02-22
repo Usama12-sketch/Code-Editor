@@ -171,7 +171,7 @@ export default function Editor() {
       <Head>
         <title>Editor</title>
       </Head>
-    <div className=' flex-col justify-between bg-gradient-to-tr from-blue-500 to-slate-500'>
+    <div className=' flex-col justify-between bg-gradient-to-tr from-blue-500 to-green-500'>
       <h1 className=' title mt-40
       '>React Converter</h1>
       <div className='flex flex-col w-full'>
