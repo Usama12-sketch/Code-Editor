@@ -32,7 +32,7 @@ export default function Navbar(props) {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center bg-white hover:bg-slate-900  hover:text-white lg:bg-opacity-0 lg:shadow-none" +
+              "lg:flex flex-grow items-center bg-white  hover:text-white lg:bg-opacity-0 lg:shadow-none" +
               (navbarOpen ? " block" : " hidden")
             }
             id="example-navbar-warning"
