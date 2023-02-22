@@ -41,20 +41,20 @@ export default function Nav() {
         <ol className="menu">
 
           <div className={nav}>
+            <Link href="/" onClick={navbarflex} >Home</Link>
+          </div>
+          <div className={nav}>
             <Link href="/Editor" onClick={navbarflex} >Editor</Link>
           </div>
 
-          <div className={nav}>
-            <Link href="/products" onClick={navbarflex} >Product</Link>
-          </div>
 
-          <div className={nav}>
+          {/* <div className={nav}>
             <Link href="/features" onClick={navbarflex} >Features</Link>
-          </div>
+          </div> */}
 
-          <div className={nav}>
+          {/* <div className={nav}>
             <Link href="/posts" onClick={navbarflex} >Posts</Link>
-          </div>
+          </div> */}
 
 
 
