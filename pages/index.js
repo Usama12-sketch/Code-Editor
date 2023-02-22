@@ -45,10 +45,10 @@ export default function Home() {
           </div>
         </div>
 
-        <Image
+        <img
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-          src="../public/next-js-banner.jpg"
-          layout='fill' 
+          src=""
+       
           alt="..."
         />
       </section>
@@ -79,7 +79,7 @@ export default function Home() {
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                 <img
                   alt="..."
-                  src="./public/React-banner.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGWGX7KSL5Kp83y27zELLqenPE5xVmJ-tSw&usqp=CAUg"
                   className="w-full align-middle rounded-t-lg"
                 />
              
@@ -92,6 +92,7 @@ export default function Home() {
                   <div className="relative flex flex-col mt-4">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/800px-Tailwind_CSS_Logo.svg.png" alt=""  />
                         <i className="fas fa-sitemap"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
@@ -105,6 +106,7 @@ export default function Home() {
                   <div className="relative flex flex-col min-w-0">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <img src="https://reactjs.org/logo-og.png" alt="" />
                         <i className="fas fa-drafting-compass"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
@@ -121,6 +123,7 @@ export default function Home() {
                   <div className="relative flex flex-col min-w-0 mt-4">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
                         <i className="fas fa-newspaper"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">Single page Applications</h6>
@@ -153,6 +156,7 @@ export default function Home() {
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas fa-sitemap text-xl"></i>
+                <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="" />
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
                 CSS Components
@@ -193,34 +197,11 @@ export default function Home() {
               <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
                 <img
                   alt="..."
-                  src="/img/component-btn.png"
+                  src="https://s3.ap-south-1.amazonaws.com/s3.studytonight.com/curious/uploads/pictures/1569233295-68451.png"
                   className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
                 />
-                <img
-                  alt="..."
-                  src="/img/component-profile-card.png"
-                  className="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-info-card.png"
-                  className="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-info-2.png"
-                  className="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-menu.png"
-                  className="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-btn-pink.png"
-                  className="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
-                />
+               
+            
               </div>
             </div>
           </div>
