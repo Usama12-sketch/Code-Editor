@@ -55,7 +55,7 @@ const IndexDropdown = () => {
         </Link>
         <Link href="/admin/settings">
           <a
-            href="#pablo"
+            href=""
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
@@ -65,7 +65,7 @@ const IndexDropdown = () => {
         </Link>
         <Link href="/admin/tables">
           <a
-            href="#pablo"
+            href=""
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
@@ -73,7 +73,7 @@ const IndexDropdown = () => {
             Tables
           </a>
         </Link>
-        <Link href="/admin/maps">
+        <Link href="">
           <a
             href="#pablo"
             className={
@@ -91,7 +91,7 @@ const IndexDropdown = () => {
         >
           Auth Layout
         </span>
-        <Link href="/auth/login">
+        <Link href="">
           <a
             href="#pablo"
             className={
@@ -101,7 +101,7 @@ const IndexDropdown = () => {
             Login
           </a>
         </Link>
-        <Link href="/auth/register">
+        <Link href="">
           <a
             href="#pablo"
             className={
@@ -119,7 +119,7 @@ const IndexDropdown = () => {
         >
           No Layout
         </span>
-        <Link href="/landing">
+        <Link href="">
           <a
             href="#pablo"
             className={
@@ -129,9 +129,9 @@ const IndexDropdown = () => {
             Landing
           </a>
         </Link>
-        <Link href="/profile">
+        <Link href="">
           <a
-            href="#pablo"
+            href=""
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
