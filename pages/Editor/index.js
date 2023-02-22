@@ -146,7 +146,11 @@ export default function Editor() {
       setCode(textInputRef.current.value)
   };
 
+  const [copied, setCopied] = useState(false);
 
+  const handleCopy = () => {
+    const text = document.getElementById("copy-text").innerText;
+  
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -237,8 +241,11 @@ export default function Editor() {
 
 
         <div className=' bg-red-600 code'>
+        <button onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy to Clipboard"}
+      </button>
           <h3 className=' codeh3'>React Component</h3>
-          <p className=' codep  bg-red-600' id="Reactcode">react:</p>
+          <p id="copy-text" className=' codep  bg-red-600' id="Reactcode">react:</p>
         </div>
 
     
