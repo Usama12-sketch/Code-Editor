@@ -241,7 +241,7 @@ export default function Editor() {
         {/* *************** HtML ***************/}
 
         <div className='code'>
-        <button className=' bg-blue-600 text-xl text-white rounded-xl ' onClick={handleCopyHTML}>
+        <button className=' bg-blue-600 text-xl focus:bg-green-300 text-white rounded-xl ' onClick={handleCopyHTML}>
         {copied1 ? "Copied!" : "Copy to Clipboard"}
       </button>
        
@@ -257,7 +257,7 @@ export default function Editor() {
 
 
         <div className=' bg-red-600 code'>
-        <button className=' bg-blue-500 text-xl text-white rounded-xl ' onClick={handleCopy}>
+        <button className=' bg-blue-500 text-xl focus:bg-green-300 text-white rounded-xl ' onClick={handleCopy}>
         {copied ? "Copied!" : "Copy to Clipboard"}
       </button>
           <h3 className=' codeh3'>React Component</h3>
