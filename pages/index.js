@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from 'next/image.js';
 
 // import IndexDropdowns from "../components/Dropdowns/IndexDropdowns.js";
-import Footer from "../components/Footers/Footer.js";
+
 
 export default function Home() { 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
                 <Link
                   href="/"
                   target="_blank">
-                  Github Star
+                  Github
                 </Link>
                   </div>
               </div>
@@ -303,7 +303,7 @@ export default function Home() {
         </div>
 
            </section>
-      <Footer />
+    
     </>
   );
 }
