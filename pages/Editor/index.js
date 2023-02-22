@@ -208,7 +208,7 @@ export default function Editor() {
         {/*********** classes for css *****************/}
 
         <div className='flex flex-col gap-2 '>
-          <button className="common2 text-blue-500" onClick={() => { classesButton(`class=" "`)
+          <button className="common2 text-base text-blue-500" onClick={() => { classesButton(`class=" "`)
              }}>class=</button>
           <button className="common2 text-blue-500" onClick={() => { classesButton(`text-2xl md:text-3xl lg:text-4xl bg-blue-500 text-white rounded-xl`)
              }}>btn</button>
