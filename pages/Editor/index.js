@@ -149,7 +149,7 @@ export default function Editor() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const text = document.getElementById("copy-text").innerText;
+    const text = document.getElementById("Reactcode").innerText;
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -248,7 +248,7 @@ export default function Editor() {
         {copied ? "Copied!" : "Copy to Clipboard"}
       </button>
           <h3 className=' codeh3'>React Component</h3>
-          <p id="copy-text" className=' codep  bg-red-600' id="Reactcode">react:</p>
+          <p className=' codep  bg-red-600' id="Reactcode">react:</p>
         </div>
 
     
