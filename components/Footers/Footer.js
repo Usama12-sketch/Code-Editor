@@ -3,26 +3,8 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer className="relative  bg-blue-500 hover:bg-gray-500 pt-8 pb-6">
-        <div
-          className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-          style={{ transform: "translateZ(0)" }}
-        >
-          <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              className="text-blueGray-200 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
+      <footer className="relative  bg-blue-500 hover:bg-gray-500 transition-all duration-500 pt-8 pb-6">
+        
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
@@ -35,25 +17,25 @@ export default function Footer() {
                   className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-twitter"></i>
+            
                 </button>
                 <button
                   className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-facebook-square"></i>
+    
                 </button>
                 <button
                   className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-dribbble"></i>
+                
                 </button>
                 <button
                   className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-github"></i>
+          
                 </button>
               </div>
             </div>
