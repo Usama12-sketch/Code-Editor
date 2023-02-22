@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer className="relative  bg-blue-500 hover:bg-gray-500 transition-all duration-500 pt-8 pb-6">
+      <footer className="relative  bg-blue-500  hover:bg-cyan-500 transition-all duration-500 pt-8 pb-6">
         
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
