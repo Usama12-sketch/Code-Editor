@@ -147,6 +147,7 @@ export default function Editor() {
   };
 
   const [copied, setCopied] = useState(false);
+  const [copied1, setCopied1] = useState(false);
 
   const handleCopy = () => {
     const text = document.getElementById("Reactcode").innerText;
@@ -156,7 +157,7 @@ export default function Editor() {
   const handleCopyHTML = () => {
     const text = document.getElementById("code").innerText;
     navigator.clipboard.writeText(text);
-    setCopied(true);
+    setCopied1(true);
   };
   
 
@@ -207,13 +208,16 @@ export default function Editor() {
         {/*********** classes for css *****************/}
 
         <div className='flex flex-col gap-2 '>
-          <button className="common2 text-blue-500" onClick={() => { classesButton(`class="text-2xl md:text-3xl lg:text-4xl"`)
+          <button className="common2 text-blue-500" onClick={() => { classesButton(`class=" "`)
+             }}>class=</button>
+          <button className="common2 text-blue-500" onClick={() => { classesButton(`text-2xl md:text-3xl lg:text-4xl bg-blue-500 text-white rounded-xl`)
              }}>btn</button>
           <button className="common2 text-green-500" onClick={() => classesButton("text-4xl md:text-5xl lg:text-6xl")}>h1</button>
           <button className="common2 text-yellow-600" onClick={() => classesButton("text-3xl md:text-4xl lg:text-5xl")}>h2</button>
           <button className="common2 text-red-500" onClick={() => classesButton("text-sm lg:text-lg md:text-xl")}>p</button>
-          <button className="common2 text-green-500" onClick={() => classesButton("")}>f-row</button>
-          <button className="common2 text-red-500" onClick={() => classesButton("")}>f-col</button>
+          <button className="common2 text-green-500" onClick={() => classesButton(" flex flex-row")}>f-row</button>
+          <button className="common2 text-red-500" onClick={() => classesButton("flex flex-col")}>f-col</button>
+          <button className="common2 text-red-500" onClick={() => classesButton("lg:flex-row md:flex-row flex-col ")}>f-Res</button>
 
         </div>
 
@@ -237,8 +241,8 @@ export default function Editor() {
         {/* *************** HtML ***************/}
 
         <div className='code'>
-        <button className=' bg-blue-500 text-xl text-white ' onClick={handleCopyHTML}>
-        {copied ? "Copied!" : "Copy to Clipboard"}
+        <button className=' bg-blue-600 text-xl text-white rounded-xl ' onClick={handleCopyHTML}>
+        {copied1 ? "Copied!" : "Copy to Clipboard"}
       </button>
        
           <h3 className=' codeh3'>HTML</h3>
@@ -253,7 +257,7 @@ export default function Editor() {
 
 
         <div className=' bg-red-600 code'>
-        <button className=' bg-blue-500 text-xl text-white ' onClick={handleCopy}>
+        <button className=' bg-blue-500 text-xl text-white rounded-xl ' onClick={handleCopy}>
         {copied ? "Copied!" : "Copy to Clipboard"}
       </button>
           <h3 className=' codeh3'>React Component</h3>
