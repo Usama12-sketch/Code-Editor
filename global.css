@@ -1,14 +1,104 @@
-body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.65;
-  word-break: break-word;
-  font-kerning: auto;
-  font-variant: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .common {
+    @apply  transition-colors bg-gray-50 border active:bg-blue-800 font-medium border-gray-200 hover:text-white text-red-600 hover:border-blue-700 rounded-lg hover:bg-blue-600 
+    text-base md:text-sm lg:text-xl
+    px-1 md:px-1 lg:px-2
+    ;
+    /* smalll text */
+    
+  }
+  .common2 {
+    @apply    transition-colors bg-green-500 bg-gray-50 border active:bg-blue-800 font-medium border-gray-200 hover:text-white text-red-600 hover:border-blue-700 rounded-lg hover:bg-green-600 
+    text-xs md:text-sm lg:text-xl
+    px-1 md:px-1 lg:px-2 w-10
+    ;
+    /* smalll text */
+  }
+  .title {
+    @apply hover:shadow-green-700  bg-red-600 bg-transparent shadow-xl h-48   shadow-black  text-blue-500 rounded-2xl font-extrabold 
+    m-10 justify-center content-center text-center
+    text-5xl md:text-6xl lg:text-9xl transition-all duration-500
+     ; 
+    /* title or Main heading */
+    }
+
+    .textarea {
+      @apply bg-transparent shadow-xl font-bold text-xl hover:shadow-2xl hover:shadow-black shadow-black text-green-600 bg-slate-600 rounded-xl  flex w-3/4 ;
+    }
+    .display3 {
+      @apply  border-transparent m-5  text-white border-spacing-3 bottom-5 shadow-xl shadow-black rounded-3xl  text-center   border-8 
+      text-base md:text-xl lg:text-3xl;
+    }
+    .display1 {
+      @apply bg-orange-600 bg-opacity-30 flex-col justify-evenly content-evenly  border-8 rounded-lg border-transparent  w-2/3
+      text-xl md:text-xl lg:text-3xl;
+    }
+    .display1 {
+      @apply h-auto overflow-scroll
+      text-xs md:text-xl lg:text-xl
+      ;
+      
+    }
+    .code {
+      @apply relative  z-30 bg-green-600 bg-opacity-30 flex-col justify-evenly content-evenly  border-8 rounded-lg border-transparent w-2/4
+      text-xl md:text-xl lg:text-3xl;
+    }
+    .codeh3 {
+      @apply  border-transparent m-5  text-white border-spacing-3 bottom-5
+      shadow-xl shadow-black rounded-3xl  text-center   border-8   
+      bg-pink-400 bg-opacity-60
+      text-xl md:text-xl lg:text-3xl;
+    }
+    .codep {
+      @apply  border-transparent flex-wrap  text-white  bottom-5 shadow-xl shadow-black rounded-3xl   border-8   bg-pink-400 h-96 bg-opacity-60
+      lg:overflow-auto overflow-scroll 
+      text-xs md:text-xl lg:text-xl
+      ;
+      
+    }
+    
+    .menu {
+      @apply lg:relative absolute flex flex-col gap-3
+       z-30  lg:w-full
+      lg:flex-row;
+      
+
+      }
+      
+      .navbar {
+        @apply flex lg:flex-row  flex-col 
+         lg:mx-0 -mx-60   text-yellow-300 hover:text-white
+         rounded-3xl border-2  bg-gradient-to-tr
+          hover:bg-gradient-to-bl
+          from-yellow-500 to-blue-500 lg:opacity-100 opacity-0
+          /* hover:from-cyan-600 hover:to-green-800 */
+           transition-all delay-200
+           duration-700 ease-in-out
+          text-sm md:text-xl 
+          w-40  lg:w-20 lg:text-xl;
+          text-align: center;
+        
+      
+        }
+        .Mobile-navbar {
+          @apply navbar
+          mx-0 opacity-100;
+          transition: 0.5s; 
+          background-color: rgba(197, 216, 24, 0.418)
+         ;
+
+          }
+          
+        }  
+          
+          /* body {
+    background-color: rgb(19, 53, 13);
+  }
+   */
+
+
+      
+    

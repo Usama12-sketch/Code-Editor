@@ -10,4 +10,13 @@ To run this application:
 
 ```
 npm run dev
+
+poperjs install
+
+npm i react-popper
 ```
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+
+import { config } from "@fortawesome/fontawesome-svg-core";
