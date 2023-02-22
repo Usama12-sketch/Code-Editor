@@ -38,7 +38,7 @@ export default function Nav() {
         </div>
 
 
-        <ol className="menu">
+        <ol className="menu lg:-mt-2 md:mt-0 mt-5">
 
           <div className={nav}>
             <Link href="/" onClick={navbarflex} >Home</Link>
