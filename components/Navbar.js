@@ -47,7 +47,7 @@ export default function Nav() {
             <Link href="/Editor" onClick={navbarflex} >Editor</Link>
           </div>
 
-
+{/* 
           {/* <div className={nav}>
             <Link href="/features" onClick={navbarflex} >Features</Link>
           </div> */}
