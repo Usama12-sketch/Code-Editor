@@ -153,6 +153,11 @@ export default function Editor() {
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+  const handleCopyHTML = () => {
+    const text = document.getElementById("code").innerText;
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
   
 
   const handleKeyPress = (e) => {
@@ -206,7 +211,7 @@ export default function Editor() {
              }}>btn</button>
           <button className="common2 text-green-500" onClick={() => classesButton("text-4xl md:text-5xl lg:text-6xl")}>h1</button>
           <button className="common2 text-yellow-600" onClick={() => classesButton("text-3xl md:text-4xl lg:text-5xl")}>h2</button>
-          <button className="common2 text-red-500" onClick={() => classesButton("")}>p</button>
+          <button className="common2 text-red-500" onClick={() => classesButton("text-sm lg:text-lg md:text-xl")}>p</button>
           <button className="common2 text-green-500" onClick={() => classesButton("")}>f-row</button>
           <button className="common2 text-red-500" onClick={() => classesButton("")}>f-col</button>
 
@@ -232,6 +237,10 @@ export default function Editor() {
         {/* *************** HtML ***************/}
 
         <div className='code'>
+        <button className=' bg-blue-500 text-xl text-white ' onClick={handleCopyHTML}>
+        {copied ? "Copied!" : "Copy to Clipboard"}
+      </button>
+       
           <h3 className=' codeh3'>HTML</h3>
           <p className=' codep  bg-green-600' id="code"> ................................................ your HTML code
           ................................................................
@@ -244,7 +253,7 @@ export default function Editor() {
 
 
         <div className=' bg-red-600 code'>
-        <button onClick={handleCopy}>
+        <button className=' bg-blue-500 text-xl text-white ' onClick={handleCopy}>
         {copied ? "Copied!" : "Copy to Clipboard"}
       </button>
           <h3 className=' codeh3'>React Component</h3>
