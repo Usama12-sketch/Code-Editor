@@ -150,6 +150,9 @@ export default function Editor() {
 
   const handleCopy = () => {
     const text = document.getElementById("copy-text").innerText;
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
   
 
   const handleKeyPress = (e) => {
@@ -257,4 +260,3 @@ export default function Editor() {
              </>
   );
 }
-
