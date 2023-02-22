@@ -16,7 +16,7 @@ export default function Home() {
   </Head>
      
       {/* <IndexDropdowns></IndexDropdowns> */}
-      <section className="header relative pt-16 items-center flex bg-green-300 hover:bg-green-700 h-screen max-h-860-px">
+      <section className="header relative pt-16 items-center flex bg-green-300 hover:bg-green-500 transition-all duration-500 h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4 ">
             <div className="pt-32 sm:pt-0">
@@ -136,6 +136,7 @@ export default function Home() {
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                         <i className="fas fa-file-alt"></i>
+                        <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-11yvtwzn.png" alt="" />
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
                         Documentation
