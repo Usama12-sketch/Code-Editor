@@ -45,11 +45,11 @@ export default function Nav() {
               HOME
           </a>
             </Link>
-            <Link href="/Editor"  >
           <a className={nav} onClick={navbarflex}>
+            <Link href="/Editor"  >
               Editor
-          </a>
             </Link>
+          </a>
 
 {/* 
           {/* <div className={nav}>
