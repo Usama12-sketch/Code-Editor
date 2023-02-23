@@ -1,13 +1,46 @@
-
+"use client"
 import Head from 'next/head'
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
+import { useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 // import IndexDropdowns from "../components/Dropdowns/IndexDropdowns.js";
 
-
 export default function Home() { 
+
+
+
+  useEffect(() => {
+    const boxes = document.querySelectorAll('.boxes2');
+
+    const checkboxes = () => {
+      const triggerbottom = (window.innerHeight / 5) * 4;
+
+      boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerbottom) {
+          box.classList.add('show');
+        } else {
+          box.classList.remove('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', checkboxes);
+    checkboxes();
+
+    return () => {
+      window.removeEventListener('scroll', checkboxes);
+    };
+  }, []);
+
+
+
+
+
+
+
   return (
     <>
   <Head>
@@ -19,7 +52,7 @@ export default function Home() {
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4 ">
             <div className="pt-32 sm:pt-0">
-              <h2 className="font-semibold text-4xl text-blueGray-600">
+              <h2 className="boxes2 font-semibold text-4xl text-blueGray-600">
                 Next JS and React.JS coder and Designer .
               </h2>
 
@@ -69,7 +102,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="container mx-auto">
-          <div className="flex flex-wrap items-center">
+          <div className="boxes2 flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                 <img
@@ -83,7 +116,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full md:w-6/12 px-4">
+            <div className="boxes2 w-full md:w-6/12 px-4">
               <div className="flex flex-wrap">
                 <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col mt-4">
@@ -148,9 +181,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+           
+  
 
-        <div className="container mx-auto overflow-hidden pb-20">
-          <div className="flex flex-wrap items-center">
+        <div className=" container mx-auto overflow-hidden pb-20">
+          <div className=" bg-yellow-300 boxes2 flex flex-wrap items-center">
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas fa-sitemap text-xl"></i>
@@ -204,14 +239,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center pt-32">
+          <div className=" flex flex-wrap items-center pt-32">
             <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
               <div className="justify-center flex flex-wrap relative">
                 <div className="my-4 w-full lg:w-6/12 px-4">
                   
               
                 
-                    <div className="bg-lightBlue-500 shadow-lg rounded-lg text-center p-8 mt-8">
+                    <div className="boxes2 bg-blue-500 bg-lightBlue-500 shadow-lg rounded-lg text-center p-8 mt-8">
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -223,7 +258,7 @@ export default function Home() {
                     </div>
                   
              
-                    <div className="bg-blueGray-700 shadow-lg rounded-lg text-center p-8 mt-8">
+                    <div className="boxes2 bg-slate-500 bg-blueGray-700 shadow-lg rounded-lg text-center p-8 mt-8">
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -237,7 +272,7 @@ export default function Home() {
                 </div>
                 <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
                  
-                    <div className="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
+                    <div className=" boxes2 bg-yellow-500 shadow-lg rounded-lg text-center p-8">
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -254,7 +289,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
+            <div className="boxes2 bg-green-300 w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                       <Image  src="/images.png" layout='intrinsic' width={400} height={400}></Image>
                 <i className="fas fa-drafting-compass text-xl"></i>

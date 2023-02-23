@@ -83,6 +83,14 @@
         
       
         }
+
+        .boxes2 {
+          @apply -mt-4  duration-1000 opacity-50 ;
+        }
+
+        .show{
+         @apply mt-4 duration-1000  opacity-100;
+        }
         .Mobile-navbar {
           @apply navbar
           mx-0 opacity-100;
