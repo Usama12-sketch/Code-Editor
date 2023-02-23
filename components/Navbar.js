@@ -7,7 +7,7 @@ export default function Nav() {
 
   const [nav, setNav] = useState(
     "navbar")
-  const [icon, setIcon] = useState("Boss"
+  const [icon, setIcon] = useState("MENU"
   )
 
   function navbarflex() {
@@ -16,14 +16,14 @@ export default function Nav() {
       let tailplus = " Mobile-navbar "
       setNav(
         tailplus)
-      setIcon(" Usama ")
+      setIcon("CLOSE")
     }
     else {
 
       setNav(
         " navbar "
       )
-      setIcon("Boss")
+      setIcon("MENU")
     }
   }
 
@@ -38,14 +38,18 @@ export default function Nav() {
         </div>
 
 
-        <ol className="menu lg:-mt-2 md:mt-0 mt-8">
+        <ol className="menu lg:-mt-2 md:mt-0 mt-16">
 
-          <div className={nav}>
-            <Link href="/" onClick={navbarflex} >Home</Link>
-          </div>
-          <div className={nav}>
-            <Link href="/Editor" onClick={navbarflex} >Editor</Link>
-          </div>
+            <Link href="/"  >
+          <a className={nav} onClick={navbarflex}>
+              HOME
+          </a>
+            </Link>
+            <Link href="/Editor"  >
+          <a className={nav} onClick={navbarflex}>
+              Editor
+          </a>
+            </Link>
 
 {/* 
           {/* <div className={nav}>
