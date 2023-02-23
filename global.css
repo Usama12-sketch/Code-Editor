@@ -72,14 +72,14 @@
         @apply flex lg:flex-row  flex-col 
          lg:mx-0 -mx-60   text-yellow-300 hover:text-white
          rounded-3xl border-2  bg-gradient-to-tr
-          hover:bg-gradient-to-bl
+          hover:bg-gradient-to-bl justify-center
           from-yellow-500 to-blue-500 lg:opacity-100 opacity-0
           /* hover:from-cyan-600 hover:to-green-800 */
            transition-all delay-200
            duration-700 ease-in-out
           text-sm md:text-xl 
-          w-40  lg:w-20 lg:text-xl;
-          text-align: center;
+          w-40  lg:w-20 lg:text-xl text-center;
+          
         
       
         }

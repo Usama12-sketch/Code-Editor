@@ -242,11 +242,11 @@ export default function Editor() {
 
         <div className='code'>
         <button className=' bg-blue-600 text-xl shadow-2xl shadow-black drop-shadow-2xl focus:bg-green-600 text-white rounded-xl ' onClick={handleCopyHTML}>
-        {copied1 ? "Copied!" : "Copy to Clipboard"}
+      Copy
       </button>
        
           <h3 className=' codeh3'>HTML</h3>
-          <p className=' codep  bg-green-600' id="code"> ................................................ your HTML code
+          <p className=' codep  bg-green-500' id="code"> ................................................ your HTML code
           ................................................................
           </p>
 
@@ -257,8 +257,8 @@ export default function Editor() {
 
 
         <div className=' bg-red-600 code'>
-        <button className=' bg-blue-500 text-xl focus:bg-green-600 shadow-2xl shadow-black text-white rounded-xl ' onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy to Clipboard"}
+        <button className=' bg-blue-500 text-xl focus:bg-green-500 shadow-2xl shadow-black text-white rounded-xl ' onClick={handleCopy}>
+        Copy
       </button>
           <h3 className=' codeh3'>React Component</h3>
           <p className=' codep  bg-red-600' id="Reactcode">react:</p>
