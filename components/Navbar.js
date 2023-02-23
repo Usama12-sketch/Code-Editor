@@ -31,7 +31,7 @@ export default function Nav() {
     <>
 
 
-      <div className="flex-col right-0 z-40 lg:relative  bg-opacity-50 lg:h-auto h-10 ">
+      <div className="flex-col hover:cursor-pointer  right-0 z-40 lg:relative  bg-opacity-50 lg:h-auto h-10 ">
         <a className="right-0 text-yellow-400 bg-blue-500 rounded-xl
         md lg:invisible 
         text-center sm:text-2xl lg:text-3xl" onClick={navbarflex}>{icon}</a>
