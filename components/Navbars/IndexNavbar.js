@@ -20,13 +20,13 @@ export default function Navbar(props) {
              </div>
 
 
-            <button
+            {/* <button
               className="cursor-pointer  hover:text-white text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
               >
-              <i className="fas fa-bars">fhdh</i>
-            </button>
+              <i className="fas fa-bars"></i>
+            </button> */}
               <Nav></Nav>
 
           </div>
