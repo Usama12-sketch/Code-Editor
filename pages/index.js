@@ -3,8 +3,7 @@ import Head from 'next/head'
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
-import Image from 'next/image.js';
-
+import Image from "next/image";
 // import IndexDropdowns from "../components/Dropdowns/IndexDropdowns.js";
 
 
@@ -44,13 +43,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <img
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-          src=""
-       
-          alt="..."
-        />
+          
+        <Image  src="/React-icon.svg.png" layout='intrinsic' width={400} height={400}></Image>
+        
       </section>
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-gray-500 transition-all duration-700 hover:bg-blue-400">
@@ -82,6 +77,8 @@ export default function Home() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGWGX7KSL5Kp83y27zELLqenPE5xVmJ-tSw&usqp=CAUg"
                   className="w-full align-middle rounded-t-lg"
                 />
+            
+        <Image  src="/React-banner.jpg" layout='intrinsic' width={400} height={240}></Image>
              
               </div>
             </div>
@@ -259,6 +256,7 @@ export default function Home() {
 
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+                      <Image  src="/images.png" layout='intrinsic' width={400} height={400}></Image>
                 <i className="fas fa-drafting-compass text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
