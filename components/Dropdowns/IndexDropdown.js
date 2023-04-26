@@ -19,124 +19,42 @@ const IndexDropdown = () => {
   return (
     <>
       <a
-        className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-        href="#pablo"
+        className=" bg-gray-500 border-b-4 rounded-md shadow-lg p-3 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+        
         ref={btnDropdownRef}
         onClick={(e) => {
           e.preventDefault();
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
-        Demo Pages
+         Pages
       </a>
       <div
         ref={popoverDropdownRef}
         className={
           (dropdownPopoverShow ? "block " : "hidden ") +
-          "bg-white text-base z-50 float-left text-red-500 py-2 list-none text-left rounded shadow-lg min-w-48"
+          "bg-white text-base z-50 float-left text-green-500 py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
-          }
-        >
-          Admin Layout
-        </span>
-        <Link href="/admin/dashboard">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Dashboard
-          </a>
-        </Link>
-        <Link href="/admin/settings">
+        
+        <Link href="/">
           <a
             href=""
             className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Settings
-          </a>
-        </Link>
-        <Link href="/admin/tables">
-          <a
-            href=""
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Tables
-          </a>
-        </Link>
-        <Link href="">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Maps
-          </a>
-        </Link>
-        <div className="h-0 mx-4 my-2 border border-solid border-blueGray-100" />
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
-          }
-        >
-          Auth Layout
-        </span>
-        <Link href="">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Login
-          </a>
-        </Link>
-        <Link href="">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Register
-          </a>
-        </Link>
-        <div className="h-0 mx-4 my-2 border border-solid border-blueGray-100" />
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
-          }
-        >
-          No Layout
-        </span>
-        <Link href="">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Landing
-          </a>
-        </Link>
-        <Link href="">
-          <a
-            href=""
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+              "text-sm py-2 px-4 font-normal ease-in-out hover:bg-slate-500 duration-500  block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
           >
             Profile
+          </a>
+        </Link>
+        <Link href="/products">
+          <a
+            href=""
+            className={
+              "text-sm py-2 hover:bg-slate-500 duration-500 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Products
           </a>
         </Link>
       </div>

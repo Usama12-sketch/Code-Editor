@@ -44,11 +44,11 @@ export default function Home() {
   return (
     <>
   <Head>
-    <title>usama</title>
+    <title>Usama bin jamshaid</title>
+    <link rel='icon' href="/00100sPORTRAIT_00100_BURST20201229170349898_COVER~2.jpg" />
   </Head>
      
-      {/* <IndexDropdowns></IndexDropdowns> */}
-      <section className="header relative pt-16 items-center flex bg-green-300 hover:bg-green-500 transition-all duration-500 h-screen max-h-860-px">
+      <section className="header relative pt-16 items-center flex bg-gradient-to-br from-green-400 to-blue-400 transition-all duration-500 h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4 ">
             <div className="pt-32 sm:pt-0">
@@ -59,16 +59,17 @@ export default function Home() {
               <div className="mt-12 flex">
                  <div  className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> 
                 <Link
-                  href="/"
+                  href="/Projects"
                   target="_blank" >
-                  Get started
+                  Get started 
                 </Link>
                   </div>
 
                 <div  className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg">
                 <Link
-                  href="/"
-                  target="_blank">
+                target='_blank'
+                  href="https://github.com/Usama12-sketch"
+                  >
                   Github
                 </Link>
                   </div>

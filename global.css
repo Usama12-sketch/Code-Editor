@@ -59,6 +59,20 @@
       ;
       
     }
+    .box {
+      @apply  border-transparent flex-wrap  text-white  bottom-5  rounded-3xl   border-8   bg-pink-400 h-96 bg-opacity-60
+  
+      text-xs md:text-xl lg:text-xl
+      ;
+      
+      box-shadow: rgba(6, 10, 6, 0.675)  13px 3px 3px 3px ;
+      
+    }
+    .fon {
+      
+   text-shadow: rgba(47, 247, 25, 0.675)  2px 2px 2px ;
+      
+    }
     
     .menu {
       @apply lg:relative absolute flex flex-col gap-3

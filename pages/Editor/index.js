@@ -170,6 +170,7 @@ export default function Editor() {
   return (<>
       <Head>
         <title>Editor</title>
+        <link rel='icon' href="/00100sPORTRAIT_00100_BURST20201229170349898_COVER~2.jpg" />
       </Head>
     <div className=' flex-col justify-between pt-20 bg-gradient-to-tr from-blue-500 to-green-500'>
       <h1 className=' title  lg:pt-16 pt-14
