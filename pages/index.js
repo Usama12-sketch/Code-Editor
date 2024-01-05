@@ -43,8 +43,13 @@ export default function Home() {
 
   return (
     <>
+  
   <Head>
-    <title>Usama bin jamshaid</title>
+    <title>Usama ccvtbug</title>
+    
+    <meta name='keywords' content='Ccvtbug, Usama HTML, javascript developer from pakistan,  ' />
+    <meta name='description' content='Ccvtbug, Usama HTML expert, javascript developer from pakistan, react.js' />
+    
     <link rel='icon' href="/00100sPORTRAIT_00100_BURST20201229170349898_COVER~2.jpg" />
   </Head>
      
